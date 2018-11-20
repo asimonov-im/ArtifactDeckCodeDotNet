@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Xunit;
 
-namespace ArtifactDeckCodeDotNet.Tests
+namespace ArtifactDeckSharp.Tests
 {
     public class CardSetApiClientTests
     {

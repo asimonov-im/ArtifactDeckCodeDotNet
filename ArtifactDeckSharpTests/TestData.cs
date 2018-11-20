@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.IO;
 
-namespace ArtifactDeckCodeDotNet.Tests
+namespace ArtifactDeckSharp.Tests
 {
     /*
         GreenBlackExample

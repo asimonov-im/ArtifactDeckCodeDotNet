@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ArtifactDeckCodeDotNet\ArtifactDeckCodeDotNet.csproj" />
+    <ProjectReference Include="..\ArtifactDeckSharp\ArtifactDeckSharp.csproj" />
   </ItemGroup>
 
   <ItemGroup>

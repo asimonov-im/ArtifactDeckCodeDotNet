@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace ArtifactDeckCodeDotNet.Tests
+namespace ArtifactDeckSharp.Tests
 {
     public class ArtifactDeckEncoderTests
     {

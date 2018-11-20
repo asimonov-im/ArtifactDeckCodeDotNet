@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtifactDeckCodeDotNet", "ArtifactDeckCodeDotNet\ArtifactDeckCodeDotNet.csproj", "{CF3BC8E8-D991-4031-9416-AB9EEC88ED4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArtifactDeckSharp", "ArtifactDeckSharp\ArtifactDeckSharp.csproj", "{CF3BC8E8-D991-4031-9416-AB9EEC88ED4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtifactDeckCodeDotNet.Tests", "ArtifactDeckCodeDotNet.Tests\ArtifactDeckCodeDotNet.Tests.csproj", "{38F69D8F-6F54-4F6A-A0E3-266D7C43122B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArtifactDeckSharpTests", "ArtifactDeckSharpTests\ArtifactDeckSharpTests.csproj", "{38F69D8F-6F54-4F6A-A0E3-266D7C43122B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

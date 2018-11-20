@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Artem Simonov</Authors>
+    <Company></Company>
+    <Product>ArtifactDeckSharp</Product>
+    <Version>0.1</Version>
+    <Description>A utilities library for creating, encoding and decoding deck information for Valve's Artifact game.</Description>
+    <PackageProjectUrl>https://github.com/asimonov-im/ArtifactDeckSharp</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/asimonov-im/ArtifactDeckSharp/blob/master/LICENSE</PackageLicenseUrl>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>

@@ -1,7 +1,7 @@
 ﻿using Xunit;
 using System.Linq;
 
-namespace ArtifactDeckCodeDotNet.Tests
+namespace ArtifactDeckSharp.Tests
 {
     public class ArtifactDeckDecoderTests
     {

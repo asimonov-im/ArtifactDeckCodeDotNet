@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ArtifactDeckCodeDotNet
+namespace ArtifactDeckSharp
 {
     public class CardSetApiClientException : Exception
     {
