@@ -50,8 +50,8 @@ namespace ArtifactDeckSharp
 
         private async Task<CardSetData> FetchCardSetData(uint setId)
         {
-            CardSetJsonLocation jsonLocation = await FetchCardSetLocation(CardSetInfoUrl(setId));
-            CardSetData cardSetData = await FetchCardSetData(jsonLocation.GetFullUri());
+            CardSetJsonLocation jsonLocation = await FetchCardSetLocation(CardSetInfoUrl(setId)).ConfigureAwait(false);
+            CardSetData cardSetData = await FetchCardSetData(jsonLocation.GetFullUri()).ConfigureAwait(false);
 
             // Record set data expiration date
             cardSetData.ExpireTimeUtc = DateTimeOffset.FromUnixTimeSeconds(jsonLocation.ExpireTime);
@@ -63,8 +63,9 @@ namespace ArtifactDeckSharp
         {
             try
             {
-                HttpResponseMessage getCardSetResult = await _httpClient.GetAsync(cardSetDataUri);
-                return JsonConvert.DeserializeObject<CardSetData>(await getCardSetResult.Content.ReadAsStringAsync());
+                HttpResponseMessage getCardSetResult = await _httpClient.GetAsync(cardSetDataUri).ConfigureAwait(false);
+                string responseContent = await getCardSetResult.Content.ReadAsStringAsync().ConfigureAwait(false);
+                return JsonConvert.DeserializeObject<CardSetData>(responseContent);
             }
             catch (Exception ex)
             {
@@ -76,8 +77,9 @@ namespace ArtifactDeckSharp
         {
             try
             {
-                HttpResponseMessage getJsonLocationResult = await _httpClient.GetAsync(setInfoUri);
-                return JsonConvert.DeserializeObject<CardSetJsonLocation>(await getJsonLocationResult.Content.ReadAsStringAsync());
+                HttpResponseMessage getJsonLocationResult = await _httpClient.GetAsync(setInfoUri).ConfigureAwait(false);
+                var responseContent = await getJsonLocationResult.Content.ReadAsStringAsync().ConfigureAwait(false);
+                return JsonConvert.DeserializeObject<CardSetJsonLocation>(responseContent);
             }
             catch (Exception ex)
             {
